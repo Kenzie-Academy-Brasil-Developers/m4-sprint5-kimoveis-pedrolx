@@ -8,26 +8,37 @@
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
     "build": "tsc",
     "typeorm": "typeorm-ts-node-commonjs",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env SECRET_KEY=1324 NODE_ENV=test jest"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/jest": "^28.1.4",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.7.13",
     "@types/supertest": "^2.0.12",
     "jest": "^28.1.2",
     "sqlite3": "^5.0.8",
     "supertest": "^6.2.4",
     "ts-jest": "^28.0.5",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   },
   "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/uuid": "^8.3.4",
+    "bcrypt": "^5.0.1",
+    "class-transformer": "^0.5.1",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
-    "pg": "^8.7.3",
+    "jsonwebtoken": "^8.5.1",
+    "jwt": "^0.2.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.6"
+    "sucrase": "^3.25.0",
+    "typeorm": "^0.3.8",
+    "uuid": "^8.3.2"
   }
 }
